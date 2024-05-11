@@ -1,0 +1,83 @@
+baseURL: https://tonyzhye.github.io/
+title: "Yeti"
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableEmoji: true # allowing using emoji
+enableRobotsTXT: true
+
+hasCJKLanguage: true
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+#googleAnalytics: UA-123-45
+
+paginate: 15 # articles per page
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+permalinks:
+  post: "/:title/"
+  # post: "/:year/:month/:day/:title/"
+
+defaultContentLanguage: en # prefer language
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    params:
+      languageName: "English"
+      contentDir: content/English
+      weight: 1
+      profileMode:
+        enabled: true
+        title: Tony Ye
+        # subtitle: "Welcome to my site!"
+        imageUrl: "me.jpg"
+        imageUrl: "me.jpg"
+        imageTitle: Me
+        imageWidth: 150
+        imageHeight: 150
+        buttons:
+          #- name: About
+          #  url: about
+          #- name: Project
+          #  url: projects
+          #- name: Resume
+          #  url: resume.pdf
+
+      menu:
+        main:
+          - identifier: About
+            name: About
+            url: about
+            weight: 1
+          #- identifier: Projects
+          #  name: Project
+          #  url: projects
+          #  weight: 2
+          #- identifier: Resume
+          #  name: Resume
+          #  url: resume.pdf
+          #  weight: 3
+          #- identifier: Blog
+          #  name: Blogs
+          #  url: blog
+          #  weight: 4
+          #- identifier: Search
+          #  name: Search
+          #  url: search
+          #  weight: 5
+      
+params:
+  hideFooter: true
+
+outputs:
+  home:
+    - HTML
+    #- RSS
+    #- JSON
